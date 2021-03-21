@@ -18,7 +18,7 @@ import java.util.List;
 public class ProductoController {
     @Autowired
     ProductoService productoService;
-    @GetMapping("/list")
+    @GetMapping("/lista")
     public ResponseEntity<List<Producto>> list(){
         List<Producto>list=productoService.list();
         return new ResponseEntity(list, HttpStatus.OK);
