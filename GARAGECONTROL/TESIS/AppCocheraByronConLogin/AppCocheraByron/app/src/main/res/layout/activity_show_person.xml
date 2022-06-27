@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/fondo"
+    tools:context=".ShowPerson">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:radius="100dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@+id/imageMore"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tdni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="4dp"
+                android:text="DNI: "
+                android:textColor="#03215F"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_dni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="18dp"
+                android:text="42929524"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tconductor"
+                android:layout_width="110dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="44dp"
+                android:text="CONDUCTOR:"
+                android:textColor="#03215F"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/tv_conductor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="58dp"
+                android:text="Jhonson Rodriguez"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/ttipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="86dp"
+                android:text="CARGO:"
+                android:textColor="#03215F"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/tv_tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="100dp"
+                android:text="Administrativo"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/testado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="124dp"
+                android:text="ESTADO:"
+                android:textColor="#03215F"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/tv_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="138dp"
+                android:text="Activo"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_marginStart="53dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/dni" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/driver" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/worker" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="120dp"
+                app:srcCompat="@drawable/pass" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="Seleccione el vehiculo:"
+            android:textColor="@color/greenbyron"
+            android:textSize="16dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="10dp"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
